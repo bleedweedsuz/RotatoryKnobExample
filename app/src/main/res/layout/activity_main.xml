@@ -6,36 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <com.zwarriorteam.rotatoryknob.RotatoryKnobView
-        android:id="@+id/rotatoryKnobView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="612dp"
-
-        app:RotatoryKnob_MaxRotorValue="80"
-        app:RotatoryKnob_MinRotorValue="20"
-        app:RotatoryKnob_RotorStep="1"
-        app:RotatoryKnob_RotorValue="30"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-
-        app:layout_constraintStart_toStartOf="parent" />
-    <TextView
-        android:id="@+id/rotatoryKnobView2_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rotatoryKnobView2" />
-
-    <com.zwarriorteam.rotatoryknob.RotatoryKnobView
         android:id="@+id/rotatoryKnobView1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
 
         android:layout_marginTop="23dp"
         app:RotatoryKnob_ImageActive="@drawable/test_knob_rotor"
@@ -48,10 +21,40 @@
         app:RotatoryKnob_RotorValue="30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rotatoryKnobView2"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <com.zwarriorteam.rotatoryknob.RotatoryKnobView
+        android:id="@+id/rotatoryKnobView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        app:RotatoryKnob_MaxRotorValue="80"
+        app:RotatoryKnob_MinRotorValue="20"
+        app:RotatoryKnob_RotorStep="1"
+        app:RotatoryKnob_RotorValue="0"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/rotatoryKnobView2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotatoryKnobView2" />
+
     <TextView
         android:id="@+id/rotatoryKnobView1_text"
         android:layout_width="wrap_content"
@@ -62,4 +65,25 @@
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rotatoryKnobView1" />
+
+    <com.zwarriorteam.rotatoryknob.RotatoryKnobView
+        android:id="@+id/rotatoryKnobView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_marginTop="23dp"
+        app:RotatoryKnob_ImageActive="@drawable/test_knob_rotor"
+        app:RotatoryKnob_ImageBack="@drawable/test_knob_back"
+        app:RotatoryKnob_ImageInactive="@drawable/test_knob_rotor_inactive"
+
+        app:RotatoryKnob_MaxRotorValue="500"
+        app:RotatoryKnob_MinRotorValue="10"
+        app:RotatoryKnob_RotorStep="1"
+        app:RotatoryKnob_RotorValue="280"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.862" />
 </androidx.constraintlayout.widget.ConstraintLayout>
