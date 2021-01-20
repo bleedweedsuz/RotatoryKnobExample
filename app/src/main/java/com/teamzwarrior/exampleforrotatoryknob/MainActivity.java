@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onRotateChange(int rotorValue) {
-                rotatoryKnobView1_text.setText(rotorValue + "");
+                rotatoryKnobView1_text.setText(String.valueOf(rotorValue));
                 Log.d(TAG, rotatoryKnobView1.getKnobState() + " :Knob 1");
                 Log.d(TAG, rotatoryKnobView1.getLastKnobDirection() + " :Knob 1");
                 Log.d(TAG, rotatoryKnobView1.getMinRotorValue() + " :Knob 1");
@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, rotatoryKnobView1.getRotorValue() + " :Knob 1");
                 Log.d(TAG, rotatoryKnobView1.getRotorAngle() + " :Knob 1");
                 Log.d(TAG, rotatoryKnobView1.getRotorStep() + " :Knob 1");
+            }
+
+            @Override
+            public void onTap(boolean isTap) {
+
             }
         });
 
@@ -53,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onRotateChange(int rotorValue) {
-                rotatoryKnobView2_text.setText(rotorValue + "");
+                rotatoryKnobView2_text.setText(String.valueOf(rotorValue));
                 Log.d(TAG, rotatoryKnobView2.getKnobState() + " :Knob 2");
                 Log.d(TAG, rotatoryKnobView2.getLastKnobDirection() + " :Knob 2");
                 Log.d(TAG, rotatoryKnobView2.getMinRotorValue() + " :Knob 2");
@@ -61,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, rotatoryKnobView2.getRotorValue() + " :Knob 2");
                 Log.d(TAG, rotatoryKnobView2.getRotorAngle() + " :Knob 2");
                 Log.d(TAG, rotatoryKnobView2.getRotorStep() + " :Knob 2");
+            }
+
+            @Override
+            public void onTap(boolean isTap) {
+
             }
         });
     }

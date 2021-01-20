@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <com.zwarriorteam.rotatoryknob.RotatoryKnobView
         android:id="@+id/rotatoryKnobView1"
         android:layout_width="200dp"
@@ -15,7 +14,7 @@
         app:RotatoryKnob_ImageActive="@drawable/test_knob_rotor"
         app:RotatoryKnob_ImageBack="@drawable/test_knob_back"
         app:RotatoryKnob_ImageInactive="@drawable/test_knob_rotor_inactive"
-
+        app:RotatoryKnob_TapEnable="false"
         app:RotatoryKnob_MaxRotorValue="80"
         app:RotatoryKnob_MinRotorValue="20"
         app:RotatoryKnob_RotorStep="1"
@@ -26,12 +25,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.005" />
-
     <com.zwarriorteam.rotatoryknob.RotatoryKnobView
         android:id="@+id/rotatoryKnobView2"
         android:layout_width="200dp"
         android:layout_height="200dp"
 
+        app:RotatoryKnob_TapEnable="true"
+        app:RotatoryKnob_KnobTapSize="20dp"
         app:RotatoryKnob_MaxRotorValue="80"
         app:RotatoryKnob_MinRotorValue="20"
         app:RotatoryKnob_RotorStep="1"
@@ -44,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.455" />
-
     <TextView
         android:id="@+id/rotatoryKnobView2_text"
         android:layout_width="wrap_content"
@@ -54,7 +53,6 @@
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toEndOf="@+id/rotatoryKnobView2"
         app:layout_constraintTop_toTopOf="@+id/rotatoryKnobView2" />
-
     <TextView
         android:id="@+id/rotatoryKnobView1_text"
         android:layout_width="wrap_content"
@@ -64,11 +62,12 @@
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toEndOf="@+id/rotatoryKnobView1"
         app:layout_constraintTop_toTopOf="@+id/rotatoryKnobView1" />
-
     <com.zwarriorteam.rotatoryknob.RotatoryKnobView
         android:id="@+id/rotatoryKnobView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
+
+        app:RotatoryKnob_TapEnable="false"
 
         android:layout_marginTop="23dp"
         app:RotatoryKnob_ImageActive="@drawable/test_knob_rotor"
